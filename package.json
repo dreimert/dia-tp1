@@ -1,0 +1,20 @@
+{
+  "name": "dia-tp1",
+  "version": "1.0.0",
+  "description": "TP1 du cours de développement et intégration d'applications distribuées.",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "node client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreimert/dia-tp1.git"
+  },
+  "author": "Damien Reimert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreimert/dia-tp1/issues"
+  },
+  "homepage": "https://github.com/dreimert/dia-tp1#readme"
+}
