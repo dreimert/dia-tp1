@@ -2,7 +2,7 @@ let Db = require('tingodb')().Db;
 let assert = require('assert');
 
 let db = new Db('./db', {});
-let collection = db.collection("msgs");
+let collection = db.collection("msgs"); // création d'une collection message
 
 // Publish -> diffusion des messages
 // PULL -> recevoir les messages
@@ -12,7 +12,9 @@ let receiver = zmq.socket('pull');
 
 receiver.on('message', function(buf) {
   console.log("received :", buf.toString());
+  // Quand on reçoit un message, on le parse
   const data = JSON.parse(buf);
+  // et le stocke dans la base de donnée
   collection.insert([data], {w:1}, function(err) {
     assert.equal(null, err);
   });

@@ -34,14 +34,14 @@ Commencez par mettre en place une architecture simple (V1) :
 * le serveur envoie le message à tous les clients.
 * le serveur stocke le message dans une base données.
 
-Passage au niveau supérieur :
+Passage au niveau supérieur (v2) :
 
 * mettre en place trois serveurs.
 * quand l'utilisateur choisie sa zone, se connecter au serveur correspondant
 * les serveurs doivent être interconnecté entre eux pour diffuser les messages à tous les clients.
 * les serveurs ne doivent stocker que les messages de leur clients.
 
-Récupération de l'historique :
+Récupération de l'historique (V3) :
 
 * Quand un client se connecte, lui renvoyer l'historique des conversations.
 

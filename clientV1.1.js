@@ -52,10 +52,11 @@ let receiver = zmq.socket('sub')
 let sender   = zmq.socket('push');
 
 receiver.on('message', function(chan, buf) {
-  console.log("chan", chan, "->", chan.toString());
-  console.log("buf:", buf, "->", buf.toString());
-  const data = JSON.parse(buf.toString());
-  displayOutputMessage(`${data.user} : ${data.msg}`);
+  // console.log("chan", chan, "->", chan.toString());
+  // console.log("buf:", buf, "->", buf.toString());
+  // Passage des messages au format JSON
+  const data = JSON.parse(buf.toString()); // parsing
+  displayOutputMessage(`${data.user} : ${data.msg}`); // affichage
 });
 
 receiver.connect('tcp://localhost:5557');
@@ -64,6 +65,8 @@ sender.connect('tcp://localhost:5558');
 
 rl.on('line', (line) => { // Quand l'utilisateur appuie sur entrée.
   //console.log(`Vous avez dit : '${line.trim()}'`);
+  // on envoie du JSON
+  // Il n'y a rien à changer coté serveur.
   sender.send(JSON.stringify({
     user: user.name,
     msg: line.trim()
