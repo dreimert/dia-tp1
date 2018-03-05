@@ -28,7 +28,7 @@ Vérifier que le client se lance et jouez un peu avec :
 
     npm run client
 
-Commencez par mettre en place une architecture simple :
+Commencez par mettre en place une architecture simple (V1) :
 
 * les clients communiquent avec un unique serveur via ØMQ.
 * le serveur envoie le message à tous les clients.

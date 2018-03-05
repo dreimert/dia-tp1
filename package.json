@@ -19,6 +19,7 @@
   "homepage": "https://github.com/dreimert/dia-tp1#readme",
   "dependencies": {
     "tingodb": "^0.5.1",
+    "yargs": "^11.0.0",
     "zeromq": "^4.6.0"
   }
 }
