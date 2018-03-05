@@ -67,6 +67,8 @@ Regarder le code du client.
 
 Regarder les TDs précédents et codez votre serveur.
 
+Pour installer une dépendence : `npm install <nom de la dépendence>`.
+
 N'hésitez pas à utiliser des messages de la forme :
 
 ```Javascript
