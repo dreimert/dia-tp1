@@ -41,6 +41,16 @@ Passage au niveau supérieur :
 * les serveurs doivent être interconnecté entre eux pour diffuser les messages à tous les clients.
 * les serveurs ne doivent stocker que les messages de leur clients.
 
+Vous en voulez encore ? Vous en êtes vraiment là ? Bravo ! Chapeau ! Bon, vous avez le choix entre continuer sur le coté serveur décentralisé ou implémenter les fonctions distribuées avec une autre technologie.
+
+### Distribuons encore les serveurs
+
+Du coup, faites en sorte qu'une zone ne puisse contenir que 3 utilisateurs. Rendez les zones anonymes, quand un utilisateur se connecte, s'il n'y a plus de zones disponibles, lancer un nouveau serveur et il se connecte à celui-ci. S'il y a deux zone avec un seul utilisateur, les fusionner.
+
+### Fonctions distribuées
+
+Autres fonctions utilent mais pour lesquelles ØMQ n'est pas adaptés et où il vaut mieux passer par d'autres technologies comme socket.io.
+
 Récupération de l'historique :
 
 * Quand un client se connecte, lui renvoyer l'historique des conversations.
@@ -52,8 +62,6 @@ Messages directes :
 Login unique :
 
 * le login d'un utilisateur doit être unique, quelque-soit la zone géographique
-
-Vous en voulez encore ? Vous en êtes vraiment là ? Bravo ! Chapeau ! Du coup, faites en sorte qu'une zone ne puisse contenir que 3 utilisateurs. Rendez les zones anonymes, quand un utilisateur se connecte, s'il n'y a plus de zones disponibles, lancer un nouveau serveur et il se connecte à celui-ci. S'il y a deux zone avec un seul utilisateur, les fusionner.
 
 Si vous avez fini tout ça en quatre heures, j'ai très envi d'en discuter avec vous et de voir vos solutions !
 
